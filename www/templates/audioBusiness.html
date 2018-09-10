@@ -1,0 +1,19 @@
+<ion-view title="Audio business">
+  <ion-content padding="true" style="background: url(https://s3.amazonaws.com/ionic-io-static/yEhQ0XCsRYCg5BPuMbmk_Fotolia_158150245_M-web2.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <h3 style="color:#FFFFFF;text-align:center;">Audio - BUSINESS</h3>
+    <form class="list">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Audios durchsuchen" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list>
+      <ion-item class="item-thumbnail-left" ui-sref="audioEinzelseite({&quot;videokey&quot;:&quot;&quot;+tutorial.id+&quot;&quot;})" ng-repeat="tutorial in narrowed_tutorials">
+        <img src="{{tutorial.imagesrc}}" onerror="this.src='https://creator.ionic.io/img/thumbnail-img.png'">
+        <h2>{{tutorial.name}}</h2>
+        <p style="white-space:normal;">{{tutorial.description}}</p>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view ng-app="myApp" title="Audio Einzelseite">
+  <ion-content padding="true" class="has-header" style="background: url(https://s3.amazonaws.com/ionic-io-static/yEhQ0XCsRYCg5BPuMbmk_Fotolia_158150245_M-web2.jpg) no-repeat center;background-size:cover;">
+    <h3>{{video.name}}</h3>
+    <div class="spacer" style="height: 10px;"></div>
+    <div class="list card">
+      <ion-item class="item-thumbnail-left item-icon-right" onclick="togglePlay(1)">
+        <img src="{{video.imagesrc}}" onerror="this.src='https://creator.ionic.io/img/thumbnail-img.png'">
+        <p style="white-space:normal;">{{video.description}}</p>
+        <i class="icon ion-ios-play" id="playbutton1"></i>
+      </ion-item>
+      <audio controls="" controlslist="nodownload" preload="metadata" id="audio1">
+        <source type="audio/mpeg" ng-src="{{video.id | trusted}}">
+      </audio>
+    </div>
+    <div class="spacer" style="height: 10px;">
+    </div>
+
+  </ion-content>
+</ion-view>

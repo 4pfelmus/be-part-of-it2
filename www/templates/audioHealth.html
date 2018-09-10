@@ -1,0 +1,18 @@
+<ion-view title="Audio Health">
+  <ion-content padding="true" style="background: url(https://s3.amazonaws.com/ionic-io-static/yEhQ0XCsRYCg5BPuMbmk_Fotolia_158150245_M-web2.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <h3 style="color:#FFFFFF;text-align:center;">Audio - GESUNDHEIT</h3>
+    <form class="list">
+      <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="Audios durchsuchen" ng-model="data.search" ng-change="search()">
+      </label>
+    </form>
+    <ion-list>
+      <ion-item class="item-thumbnail-left" ui-sref="audioHealthEinzelseite({&quot;videokey&quot;:&quot;&quot;+audiogesundheit.id+&quot;&quot;})" ng-repeat="audiogesundheit in narrowed_audiogesundheit">
+        <img src="{{audiogesundheit.imagesrc}}" onerror="this.src='https://creator.ionic.io/img/thumbnail-img.png'">
+        <h2>{{audiogesundheit.name}}</h2>
+        <p style="white-space:normal;">{{audiogesundheit.description}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

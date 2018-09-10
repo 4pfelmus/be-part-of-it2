@@ -1,0 +1,36 @@
+<ion-view title="Login" nav-transition="none" hide-nav-bar="true" cache-view="false">
+  <ion-content padding="true" style="background: url(https://s3.amazonaws.com/ionic-io-static/ibVyYQvpSuKUauQPB7h7_Fotolia_83908624_M-web.jpg) no-repeat center;background-size:cover;">
+    <div class="spacer" style="width: 100%; height: 20px;"></div>
+    <div>
+      <h1 style="color:white!important;">Be-Part-of-it</h1>
+    </div>
+    <div class="spacer" style="width: 100%; height:5px;"></div>
+    <form id="login-form1" class="list center-form">
+      <div class="show-list-numbers-and-dots error-box">
+        <p>{{errorBox}}</p>
+      </div>
+      <ion-list id="login-list1">
+        <label class="item item-input top-input" id="login-input1">
+          <input type="email" placeholder="Email" ng-model="data.email">
+        </label>
+        <label class="item item-input bottom-input" id="login-input2">
+          <input type="password" placeholder="Passwort" ng-model="data.password">
+        </label>
+      </ion-list>
+      <div class="spacer" style="width: 290px; height:165px;"></div>
+      <button id="login-button1" ng-click="login()" class="button button-positive  button-block button-positive">Anmelden</button>
+      <a ui-sref="registrieren" id="login-button2" class="button button-light button-block">Registrieren</a>
+    </form>
+    <div class="button-bar">
+      <a ui-sref="impressum()" menu-close="" class="button button-positive button-small button-block">Impressum</a>
+      <a ui-sref="datenschutzerklaerung()" menu-close="" class="button button-positive button-small button-block">Datenschutz</a>
+    </div>
+    <div class="no-text-shadow" style="background:#fff; padding:5px;">
+      <p style="font-size:0.8em; line-height:1em;">Die Inhalte dieser App (Dateien, Videos, Audios) dienen ausschließlich zu internen Schulungszwecken für Partner von Lifeplus mit aktiver PIN aus dem Team Kai Mäscher! Sie dürfen nur angeschaut, aber weder heruntergeladen, noch anderen Personen zur
+        Verfügung gestellt werden.
+        <a ui-sref="impressum()">Mehr Infos</a>
+      </p>
+    </div>
+
+  </ion-content>
+</ion-view>

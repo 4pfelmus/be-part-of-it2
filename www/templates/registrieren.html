@@ -1,0 +1,62 @@
+<ion-view title="Registrieren" nav-transition="none" hide-nav-bar="true" cache-view="false">
+  <ion-content padding="true" style="background: url(https://s3.amazonaws.com/ionic-io-static/LCjr2fAYS5e8UvrxpD8M_greg-kantra-554052-unsplash-web2.jpg) no-repeat center;background-size:cover;" scroll="true">
+    <div class="spacer" style="width: 300px; height: 20px;"></div>
+    <div>
+      <h1>Be-Part-of-it</h1>
+    </div>
+
+    <div class="spacer" style="width: 300px; height: 10px;"></div>
+    <form id="signup-form12" class="list center-form">
+      <div id="signup-markdown5" class="show-list-numbers-and-dots error-box">
+        <p>{{errorBox}}</p>
+      </div>
+      <ion-list id="signup-list4">
+        <label class="item item-input top-input" id="signup-input2">
+          <span class="input-label">Name</span>
+          <input type="text" placeholder="" ng-model="data.name">
+        </label>
+        <label class="item item-input top-input" id="signup-input3">
+          <span class="input-label">Email
+            <span style="color:red;">*</span>
+          </span>
+          <input type="email" placeholder="" ng-model="data.email" required="required">
+        </label>
+        <label class="item item-input bottom-input" id="signup-input4">
+          <span class="input-label">Passwort
+            <span style="color:red;">*</span>
+          </span>
+          <input type="password" placeholder="" ng-model="data.password" required="required">
+        </label>
+        <!--<label class="item item-input bottom-input" id="signup-input5">
+          <input type="password" placeholder="Passwort wiederholen">
+        </label>-->
+        <label class="item item-input bottom-input" id="signup-input6">
+          <span class="input-label">Telefon</span>
+          <input type="tel" placeholder="" ng-model="data.phone">
+        </label>
+        <label class="item item-input bottom-input" id="signup-input7">
+          <span class="input-label">Geburtsdatum</span>
+          <input type="date" placeholder="" ng-model="data.birthday">
+        </label>
+        <label class="item item-input bottom-input" id="signup-input8">
+          <span class="input-label">Deine Lifeplus-PIN
+            <span style="color:red;">*</span>
+          </span>
+          <input type="number" placeholder="" ng-model="data.pin" required="required">
+        </label>
+        <label class="item item-input bottom-input" id="signup-input9">
+          <span class="input-label">Lifeplus-PIN deines Sponsors</span>
+          <input type="number" placeholder="" ng-model="data.sponsorpin">
+        </label>
+        <p style="color:white; text-align:center;">Mit
+          <span style="color:red;">*</span> markierte Felder sind Pflichtfelder</p>
+      </ion-list>
+      <button id="signup-button25" ng-click="signup()" class="button button-block button-positive">Registrieren</button>
+      <a ui-sref="login" id="signup-button26" class="button button-light  button-block">Bereits registriert?</a>
+    </form>
+    <div class="button-bar">
+      <a ui-sref="impressum()" menu-close="" class="button button-positive button-small button-block">Impressum</a>
+      <a ui-sref="datenschutzerklaerung()" menu-close="" class="button button-positive button-small button-block">Datenschutz</a>
+    </div>
+  </ion-content>
+</ion-view>

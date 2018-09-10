@@ -1,0 +1,28 @@
+<ion-view title="Verification" hide-nav-bar="true" hide-back-button="true">
+  <ion-content padding="true" class="manual-ios-statusbar-padding">
+    <div class="spacer" style="height: 20px;"></div>
+    <span class="no-text-shadow">
+      <h1 style="color:#000000;">Ihre Registrierung ist eingegangen.</h1>
+      <div class="spacer" style="height: 20px;"></div>
+      <div style="text-align:center;" class="show-list-numbers-and-dots">
+
+        <p style="color:#000000;">
+          <strong>Wenn Ihre LifePlus-PIN korrekt ist, schalten wir Ihren Account frei.</strong>
+        </p>
+        <br>
+        <p style="color:#000000;">Beim ersten Einloggen bekommen Sie eine E-Mail mit einem Link über den Sie Ihre
+          <strong>E-Mail-Adresse bestätigen</strong> müssen.</p>
+      </div>
+      <a ui-sref="login()" class="button button-positive button-block">Zum Login</a>
+      <div class="spacer" style="height: 40px;"></div>
+      <!--<div style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;">Sie haben keine E-Mail bekommen?</p>
+    </div>
+    <button class="button button-positive button-block button-outline" ng-click="user.sendEmailVerification()">Bestätigungsmail erneut schicken</button>-->
+      <div style="text-align:center;" class="show-list-numbers-and-dots">
+        <p style="color:#000000;">Sie möchten eine Andere E-Mail angeben?</p>
+      </div>
+      <a ui-sref="registrieren()" class="button button-positive button-block button-outline">Neu registrieren</a>
+    </span>
+  </ion-content>
+</ion-view>
