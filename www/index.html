@@ -8,6 +8,31 @@
     <link rel="stylesheet" href="fonts/roboto/css/fonts.css">
     
     <script src="lib/ionic/js/ionic.bundle.js"></script>
+	  
+	<script src="/lib/ionic-pro/ionic-pro.module.min.js"></script>
+
+<script type="text/javascript">
+		var isPlaying = false;
+
+		function togglePlay(i) {
+			var myAudio = document.getElementById('audio' + i);
+			var playButton = document.getElementById('playbutton' + i);
+			
+		  if (isPlaying) {
+			myAudio.pause();
+			playButton.classList.remove('ion-ios-pause');
+			playButton.classList.add('ion-ios-play');
+			console.log("Audio wurde pausiert.");
+			isPlaying = false;
+		  } else {
+			myAudio.play();
+			playButton.classList.remove('ion-ios-play');
+			playButton.classList.add('ion-ios-pause');
+			console.log("Audio wurde geplayed.");
+			isPlaying = true;
+		  }
+		};
+	</script>
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>

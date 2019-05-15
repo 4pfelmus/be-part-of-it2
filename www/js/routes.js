@@ -39,14 +39,10 @@ angular.module('app.routes', ['ionicUIRouter'])
     }
   })
 
-  .state('tabsController.videoLifeplusVon', {
+  .state('videoLifeplusVon', {
     url: '/page32',
-    views: {
-      'tab1': {
-        templateUrl: 'templates/videoLifeplusVon.html',
-        controller: 'videoLifeplusVonCtrl'
-      }
-    }
+    templateUrl: 'templates/videoLifeplusVon.html',
+    controller: 'videoLifeplusVonCtrl'
   })
 
   .state('tabsController.videoLifeplusEvents', {
@@ -396,6 +392,16 @@ angular.module('app.routes', ['ionicUIRouter'])
 },
     templateUrl: 'templates/audioHealthEinzelseite.html',
     controller: 'audioHealthEinzelseiteCtrl'
+  })
+
+  .state('tabsController.page', {
+    url: '/page41',
+    views: {
+      'tab1': {
+        templateUrl: 'templates/page.html',
+        controller: 'pageCtrl'
+      }
+    }
   })
 
 $urlRouterProvider.otherwise('/login')

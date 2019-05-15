@@ -349,6 +349,7 @@ function ($scope, $stateParams,  $firebaseArray, $state) {
                      $scope.errorBox = "Sie haben Ihre E-Mail noch nicht bestätigt. Bitte klicken Sie auf den Link in der E-Mail, die wir Ihnen gesendet haben.";
                   });
                   user.sendEmailVerification().then(function() {
+                      console.log("Die Bestätigungsmail wurde versendet");
                       // Email sent.
                   })
 
@@ -418,7 +419,7 @@ function ($scope, $stateParams, $firebaseArray, $state) {
             var userType = $scope.data.usertype;
             
 
-            console.log("UID:" + uid)
+            console.log("UID:" + uid);
 
             
             firebase.database().ref("users/" + uid).set({
@@ -429,6 +430,8 @@ function ($scope, $stateParams, $firebaseArray, $state) {
               PIN: $scope.data.pin,
               SponsorPIN: $scope.data.sponsorpin,
             });
+            console.log("User angelegt");
+            console.log(email);
               
           } else {
             // No user is signed in.
@@ -498,4 +501,12 @@ function ($scope, $stateParams, Audiogesundheit) {
 
 
 ])
+   
+.controller('pageCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
+// You can include any angular dependencies as parameters for this function
+// TIP: Access Route Parameters for your page via $stateParams.parameterName
+function ($scope, $stateParams) {
+
+
+}])
  

@@ -25,19 +25,6 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
-	  if(window.Connection) {
-                if(navigator.connection.type == Connection.NONE) {
-                    $ionicPopup.confirm({
-                        title: "Keine Internetverbindung",
-                        content: "Bitte versuche es erneut, wenn wieder eine Internetverbindung verfügbar ist."
-                    })
-                    .then(function(result) {
-                        if(!result) {
-                            ionic.Platform.exitApp();
-                        }
-                    });
-                }
-            }
   });
 })
 
