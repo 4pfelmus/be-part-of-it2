@@ -11,5 +11,9 @@
     "!www/**/*.map"
   ],
   "pro_id": "7dcf950b",
-  "gulpStartupTasks": ["sass", "watch"]
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "id": "7dcf950b"
 }
