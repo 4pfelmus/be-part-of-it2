@@ -11,6 +11,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <access origin="*" subdomains="true" />
     <allow-navigation href="*://*.youtube.com/*" />
     <allow-intent href="*://*.youtube.com/*" />
     <access origin="*://*.youtube.com/*" />
@@ -92,6 +93,6 @@
     <plugin name="cordova-plugin-splashscreen" spec="5.0.2" />
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
-    <engine name="ios" spec="~4.5.5" />
     <plugin name="cordova-plugin-network-information" spec="^2.0.1" />
+    <engine name="ios" spec="^4.5.5" />
 </widget>
