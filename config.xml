@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.be-konzepte.lifeplus-coaching" version="1.2.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.bekonzepte.lifepluscoaching" version="1.2.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Be-Part-Of-It</name>
     <description>Die App rund um das Thema Lifeplus!</description>
     <author email="kai.maescher@me.com" href="http://kero-design.de/">Kai Maescher</author>
