@@ -10,7 +10,7 @@
     "!www/lib/**/*",
     "!www/**/*.map"
   ],
-  "pro_id": "7dcf950b",
+  "id": "7dcf950b",
   "gulpStartupTasks": [
     "sass",
     "watch"
